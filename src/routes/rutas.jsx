@@ -1,6 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "../pages/home"
+import Login from "../pages/login"
+
+import {RutaPrivada} from "./rutaProtegida"
 
 const rutas = createBrowserRouter([
     {
@@ -10,11 +13,11 @@ const rutas = createBrowserRouter([
     },
     {
         path: "/login",
-        element: ""
+        element: <Login/>
     },
     {
         path: "/admin",
-        element: "",
+        element: <RutaPrivada>  </RutaPrivada>,
         children: [
             {
                 path: "agenda",
