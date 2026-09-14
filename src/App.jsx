@@ -1,13 +1,5 @@
-import { useState } from 'react'
+import Routes from "./routes/rutas";
 
-function App() {
-  
-
-  return (
-    <>
-      
-    </>
-  )
+export default function App() {
+  return <Routes/>
 }
-
-export default App
